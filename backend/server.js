@@ -10,19 +10,7 @@ console.log(`[1] PORT configuration detected: ${PORT}`);
 console.log(`[2] DATABASE_URL configuration detected: ${process.env.DATABASE_URL ? 'PRESENT' : 'MISSING'}`);
 
 // 2. Define Immediate Health Check Routes (Always Available)
-app.get('/', (req, res) => {
-  res.status(200).send(`
-    <html>
-      <body style="font-family: sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; background: #f0f4f8;">
-        <div style="text-align: center; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-          <h1 style="color: #2563eb;">🚀 ProjectPilot API is Live!</h1>
-          <p>The backend is successfully deployed and actively listening on Railway.</p>
-          <p style="color: #64748b; font-size: 0.9rem;">Status: OK | Environment: ${process.env.NODE_ENV || 'development'}</p>
-        </div>
-      </body>
-    </html>
-  `);
-});
+// The root route '/' is reserved for the React frontend, so we don't define it here.
 
 app.get('/health', (req, res) => {
   res.status(200).json({ status: 'ok', message: 'Minimal startup successful' });
