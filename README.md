@@ -1,15 +1,10 @@
-# 🚀 ProjectPilot: Advanced Team Task Manager
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org/)
-[![React](https://img.shields.io/badge/React-18.3-blue)](https://reactjs.org/)
-[![Prisma](https://img.shields.io/badge/ORM-Prisma-2D3748)](https://www.prisma.io/)
+# ProjectPilot: Advanced Team Task Manager
 
 **ProjectPilot** is a robust, full-stack task management ecosystem designed for high-performance teams. It provides a seamless interface for project coordination, task tracking, and team collaboration, backed by a resilient, production-ready backend architecture.
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ProjectPilot follows a decoupled **Client-Server Architecture** optimized for scalability and rapid deployment.
 
@@ -32,18 +27,18 @@ A sophisticated **Express.js** server implementing a **Deferred Loading Pattern*
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-- 🔐 **Secure Authentication**: JWT-based login/signup with bcrypt password hashing.
-- 📊 **Dynamic Dashboard**: Visual overview of task statuses and project progress.
-- 📂 **Project Lifecycle**: Full CRUD operations for projects with creator-based permissions.
-- 📝 **Granular Task Management**: Assign tasks, set priorities (Low/Medium/High), and track deadlines.
-- 👥 **Team Collaboration**: Add/remove members to specific projects with role-based visibility.
-- 🛡️ **Production Ready**: Integrated Security (Helmet, CORS), structured logging (Morgan), and graceful shutdown handlers.
+- Secure Authentication: JWT-based login/signup with bcrypt password hashing.
+- Dynamic Dashboard: Visual overview of task statuses and project progress.
+- Project Lifecycle: Full CRUD operations for projects with creator-based permissions.
+- Granular Task Management: Assign tasks, set priorities (Low/Medium/High), and track deadlines.
+- Team Collaboration: Add/remove members to specific projects with role-based visibility.
+- Production Ready: Integrated Security (Helmet, CORS), structured logging (Morgan), and graceful shutdown handlers.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technologies |
 | :--- | :--- |
@@ -54,7 +49,7 @@ A sophisticated **Express.js** server implementing a **Deferred Loading Pattern*
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js (v18+)
@@ -103,7 +98,7 @@ npm run dev
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 Team_Task_Manager/
@@ -128,13 +123,8 @@ Team_Task_Manager/
 
 ---
 
-## 🛡️ Security & Performance
+## Security & Performance
 - **Helmet**: Secures Express apps by setting various HTTP headers.
 - **CORS**: Configured for restricted origin access.
 - **Zod**: Runtime type checking for API requests.
 - **Deferred Loading**: Guarantees high availability during cold starts.
-
----
-
-## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
