@@ -1,3 +1,11 @@
+// FORCE ENVIRONMENT VARIABLES IF RAILWAY FAILS TO INJECT THEM
+if (!process.env.DATABASE_URL) {
+  process.env.DATABASE_URL = "postgres://62cfa1e42b233f2d7d908b5f3aa33c959eafb21ee992328034213b197612c482:sk_UdJCVe9473POz7UDr2ZMw@db.prisma.io:5432/postgres?sslmode=require";
+}
+if (!process.env.JWT_SECRET) {
+  process.env.JWT_SECRET = "projectpilot-super-secret-jwt-key-change-in-production-2024";
+}
+
 const app = require('./app');
 const prisma = require('./config/db');
 
