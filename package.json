@@ -1,0 +1,8 @@
+{
+  "name": "project-task-manager",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm --prefix backend install && npm --prefix backend run build",
+    "start": "npm --prefix backend start"
+  }
+}
